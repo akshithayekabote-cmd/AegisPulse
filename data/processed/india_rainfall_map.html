@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ad8eb92afce4bd21a020dbea1722059e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ad8eb92afce4bd21a020dbea1722059e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ad8eb92afce4bd21a020dbea1722059e = L.map(
+                "map_ad8eb92afce4bd21a020dbea1722059e",
+                {
+                    center: [22.5, 80.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b5f171597879f795ac60354bf91e365d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b5f171597879f795ac60354bf91e365d.addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+            var circle_marker_8d8133cc4f222917d79be7afa4e2bb83 = L.circleMarker(
+                [25.25, 91.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_6311258844e8087112feb8c392469704 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15288936a2322d3996fcd621a3792505 = $(`<div id="html_15288936a2322d3996fcd621a3792505" style="width: 100.0%; height: 100.0%;">Latitude: 25.25<br>Longitude: 91.25<br>Average Rainfall: 31.17 mm/day</div>`)[0];
+                popup_6311258844e8087112feb8c392469704.setContent(html_15288936a2322d3996fcd621a3792505);
+            
+        
+
+        circle_marker_8d8133cc4f222917d79be7afa4e2bb83.bindPopup(popup_6311258844e8087112feb8c392469704)
+        ;
+
+        
+    
+    
+            var circle_marker_8456a8a51d4ebf65487aefd6fe4316e0 = L.circleMarker(
+                [25.25, 91.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_be4379c7aa4f509950433c458f10695f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e97e4d73b30534e5735a728cc720eab = $(`<div id="html_5e97e4d73b30534e5735a728cc720eab" style="width: 100.0%; height: 100.0%;">Latitude: 25.25<br>Longitude: 91.0<br>Average Rainfall: 29.35 mm/day</div>`)[0];
+                popup_be4379c7aa4f509950433c458f10695f.setContent(html_5e97e4d73b30534e5735a728cc720eab);
+            
+        
+
+        circle_marker_8456a8a51d4ebf65487aefd6fe4316e0.bindPopup(popup_be4379c7aa4f509950433c458f10695f)
+        ;
+
+        
+    
+    
+            var circle_marker_9117cfa3d9571c00f78d5fbf73dafd11 = L.circleMarker(
+                [25.25, 91.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_09ce14b815b00fe994d63537e2f7dd13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71d1ca0106a86794849636017c8d44ed = $(`<div id="html_71d1ca0106a86794849636017c8d44ed" style="width: 100.0%; height: 100.0%;">Latitude: 25.25<br>Longitude: 91.5<br>Average Rainfall: 25.19 mm/day</div>`)[0];
+                popup_09ce14b815b00fe994d63537e2f7dd13.setContent(html_71d1ca0106a86794849636017c8d44ed);
+            
+        
+
+        circle_marker_9117cfa3d9571c00f78d5fbf73dafd11.bindPopup(popup_09ce14b815b00fe994d63537e2f7dd13)
+        ;
+
+        
+    
+    
+            var circle_marker_c541aa744a8788a4977a8298f9b6e68d = L.circleMarker(
+                [25.5, 91.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_d6d53522577138f529fd0c9c74063856 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af2c3cb6616618e58203d531f8cbb5e1 = $(`<div id="html_af2c3cb6616618e58203d531f8cbb5e1" style="width: 100.0%; height: 100.0%;">Latitude: 25.5<br>Longitude: 91.25<br>Average Rainfall: 19.77 mm/day</div>`)[0];
+                popup_d6d53522577138f529fd0c9c74063856.setContent(html_af2c3cb6616618e58203d531f8cbb5e1);
+            
+        
+
+        circle_marker_c541aa744a8788a4977a8298f9b6e68d.bindPopup(popup_d6d53522577138f529fd0c9c74063856)
+        ;
+
+        
+    
+    
+            var circle_marker_b0dc7c1a5309d3206af3684ef830aaf7 = L.circleMarker(
+                [25.25, 90.75],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_7191834ad2b1877d9a52483b34568343 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58e05990ee203074f84ceda87b0b2407 = $(`<div id="html_58e05990ee203074f84ceda87b0b2407" style="width: 100.0%; height: 100.0%;">Latitude: 25.25<br>Longitude: 90.75<br>Average Rainfall: 18.83 mm/day</div>`)[0];
+                popup_7191834ad2b1877d9a52483b34568343.setContent(html_58e05990ee203074f84ceda87b0b2407);
+            
+        
+
+        circle_marker_b0dc7c1a5309d3206af3684ef830aaf7.bindPopup(popup_7191834ad2b1877d9a52483b34568343)
+        ;
+
+        
+    
+    
+            var circle_marker_1a941cd6722cdb0a3a03f0c878401f17 = L.circleMarker(
+                [13.5, 75.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_3207290dbdb3569c32aa3ca56eae905c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2b9a92d6ce1bc28974fee26233f9732 = $(`<div id="html_b2b9a92d6ce1bc28974fee26233f9732" style="width: 100.0%; height: 100.0%;">Latitude: 13.5<br>Longitude: 75.0<br>Average Rainfall: 17.64 mm/day</div>`)[0];
+                popup_3207290dbdb3569c32aa3ca56eae905c.setContent(html_b2b9a92d6ce1bc28974fee26233f9732);
+            
+        
+
+        circle_marker_1a941cd6722cdb0a3a03f0c878401f17.bindPopup(popup_3207290dbdb3569c32aa3ca56eae905c)
+        ;
+
+        
+    
+    
+            var circle_marker_2ece5d745418e65e4c9c98c522f33dfe = L.circleMarker(
+                [14.25, 74.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_812afda49edef6cb36883d88a7d1b3fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b079df050b716891eb1d17f2d604af28 = $(`<div id="html_b079df050b716891eb1d17f2d604af28" style="width: 100.0%; height: 100.0%;">Latitude: 14.25<br>Longitude: 74.5<br>Average Rainfall: 17.13 mm/day</div>`)[0];
+                popup_812afda49edef6cb36883d88a7d1b3fd.setContent(html_b079df050b716891eb1d17f2d604af28);
+            
+        
+
+        circle_marker_2ece5d745418e65e4c9c98c522f33dfe.bindPopup(popup_812afda49edef6cb36883d88a7d1b3fd)
+        ;
+
+        
+    
+    
+            var circle_marker_8413abea78df5cf3550877558d01bffa = L.circleMarker(
+                [16.5, 73.75],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_b3b77cdb5eb5c8e9f5e6a25718b2c62b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43e11f8bd3825a1f4f47d1096e90a44c = $(`<div id="html_43e11f8bd3825a1f4f47d1096e90a44c" style="width: 100.0%; height: 100.0%;">Latitude: 16.5<br>Longitude: 73.75<br>Average Rainfall: 16.95 mm/day</div>`)[0];
+                popup_b3b77cdb5eb5c8e9f5e6a25718b2c62b.setContent(html_43e11f8bd3825a1f4f47d1096e90a44c);
+            
+        
+
+        circle_marker_8413abea78df5cf3550877558d01bffa.bindPopup(popup_b3b77cdb5eb5c8e9f5e6a25718b2c62b)
+        ;
+
+        
+    
+    
+            var circle_marker_cb0e64b88d80552eedc182d955514b94 = L.circleMarker(
+                [18.0, 73.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_c4d4c71b294f38dea0a99f6427972ebd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01bebddd219b595f073367880516cff5 = $(`<div id="html_01bebddd219b595f073367880516cff5" style="width: 100.0%; height: 100.0%;">Latitude: 18.0<br>Longitude: 73.5<br>Average Rainfall: 16.87 mm/day</div>`)[0];
+                popup_c4d4c71b294f38dea0a99f6427972ebd.setContent(html_01bebddd219b595f073367880516cff5);
+            
+        
+
+        circle_marker_cb0e64b88d80552eedc182d955514b94.bindPopup(popup_c4d4c71b294f38dea0a99f6427972ebd)
+        ;
+
+        
+    
+    
+            var circle_marker_b152afc317cd7b593547db5089b7c14d = L.circleMarker(
+                [15.5, 74.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ad8eb92afce4bd21a020dbea1722059e);
+        
+    
+        var popup_429704d5e1e5c54c28a5c1cd7d421fdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4624259fd558af0d23916473c986e2be = $(`<div id="html_4624259fd558af0d23916473c986e2be" style="width: 100.0%; height: 100.0%;">Latitude: 15.5<br>Longitude: 74.0<br>Average Rainfall: 16.14 mm/day</div>`)[0];
+                popup_429704d5e1e5c54c28a5c1cd7d421fdd.setContent(html_4624259fd558af0d23916473c986e2be);
+            
+        
+
+        circle_marker_b152afc317cd7b593547db5089b7c14d.bindPopup(popup_429704d5e1e5c54c28a5c1cd7d421fdd)
+        ;
+
+        
+    
+</script>
+</html>

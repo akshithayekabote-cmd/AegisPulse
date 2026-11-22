@@ -1,0 +1,29 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Original rainfall dataset
+data/raw/
+
+data/processed/rainfall_ml_features_2024.csv
+data/processed/rainfall_train.csv
+data/processed/rainfall_test.csv
