@@ -3,27 +3,38 @@
 __pycache__/
 *.py[cod]
 
-# Virtual environment
+# Virtual environments
 venv/
 .venv/
-
-# Jupyter checkpoints
-.ipynb_checkpoints/
 
 # IDE settings
 .vscode/
 
-# Temporary files
+# Jupyter files
+.ipynb_checkpoints/
+
+# Temporary and operating system files
 *.log
 *.tmp
-
-# Operating system files
 .DS_Store
 Thumbs.db
 
-# Original rainfall dataset
+# Raw datasets
 data/raw/
 
-data/processed/rainfall_ml_features_2024.csv
-data/processed/rainfall_train.csv
-data/processed/rainfall_test.csv
+# Ignore generated processed files by default
+data/processed/*
+
+# Keep essential files required by AegisPulse
+!data/processed/india_grid_subdivision_mapping.csv
+!data/processed/india_rainfall_cleaned_2015_2024.nc
+!data/processed/spatial_neighbor_mapping.npz
+
+# Keep prediction output
+!data/processed/predictions/
+data/processed/predictions/*
+!data/processed/predictions/aegispulse_next_day_predictions.csv.gz
+
+# Keep only the final frozen model
+models/*
+!models/historical_rainfall_model_v3.npz

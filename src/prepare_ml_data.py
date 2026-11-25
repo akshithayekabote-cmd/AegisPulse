@@ -30,9 +30,11 @@ unique_dates = sorted(df["TIME"].unique())
 split_index = int(len(unique_dates) * 0.80)
 split_date = unique_dates[split_index]
 
-train_data = df[df["TIME"] < split_date].copy()
-test_data = df[df["TIME"] >= split_date].copy()
+train_data = df[
+    (df["TIME"] + pd.Timedelta(days=1)) < split_date
+].copy()
 
+test_data = df[df["TIME"] >= split_date].copy()
 # Save training and testing datasets
 train_data.to_csv(
     "data/processed/rainfall_train.csv",

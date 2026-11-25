@@ -1,8 +1,7 @@
-numpy
-pandas
-xarray
-netCDF4
-matplotlib
-seaborn
-folium
-scipy
+streamlit==1.67.0
+pandas==3.1.1
+numpy==2.5.4
+pydeck==0.9.3
+xarray==2026.9.0
+scipy==1.18.1
+folium==0.20.0
